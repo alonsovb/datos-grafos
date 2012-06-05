@@ -1,0 +1,171 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.3.1512.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Grafo</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Structure">
+        <Name>grafo</Name>
+        <Access>Public</Access>
+        <Location left="275" top="58" />
+        <Size width="275" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int vertc</Member>
+        <Member type="Field">vertice vertinicio</Member>
+        <Member type="Field">vertice vertfin</Member>
+        <Member type="Field">arco arcinicio</Member>
+        <Member type="Field">string rutac</Member>
+        <Member type="Field">int newField</Member>
+        <Member type="Method">public void leer()</Member>
+        <Member type="Method">public arco buscar(string nombre)</Member>
+        <Member type="Method">public void insertararco(arco nuevo, subarco preds)</Member>
+      </Entity>
+      <Entity type="Structure">
+        <Name>vertice</Name>
+        <Access>Public</Access>
+        <Location left="275" top="323" />
+        <Size width="162" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int id</Member>
+        <Member type="Field">double et</Member>
+        <Member type="Field">subarco pred</Member>
+        <Member type="Field">subarco sigarco</Member>
+        <Member type="Field">vertice sig</Member>
+      </Entity>
+      <Entity type="Structure">
+        <Name>arco</Name>
+        <Access>Public</Access>
+        <Location left="701" top="323" />
+        <Size width="162" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">char[] nombre</Member>
+        <Member type="Field">int tiempo</Member>
+        <Member type="Field">vertice destino</Member>
+        <Member type="Field">arco sig</Member>
+      </Entity>
+      <Entity type="Structure">
+        <Name>subarco</Name>
+        <Access>Public</Access>
+        <Location left="488" top="323" />
+        <Size width="162" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">arco destino</Member>
+        <Member type="Field">arco sig</Member>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="3" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>675</X>
+          <Y>401</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>658</X>
+          <Y>401</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="3" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>679</X>
+          <Y>388</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>679</X>
+          <Y>265</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>803</X>
+          <Y>260</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>787</X>
+          <Y>523</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>353</X>
+          <Y>523</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>225</X>
+          <Y>413</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>314</X>
+          <Y>521</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>397</X>
+          <Y>298</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>581</X>
+          <Y>218</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>786</X>
+          <Y>291</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

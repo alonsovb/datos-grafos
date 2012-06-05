@@ -1,0 +1,1 @@
+A,1,0;B,2,0;C,1,A;D,2,C;E,6,B,C;F,10,D;G,3,F;H,1,G;I,1,F;J,5,E,H;K,2,I;L,1,F,J;M,2,F;N,4,L,M;O,2,G,J;P,2,O;Q,1,I,P;R,7,P;S,7,I,N;T,3,S;
